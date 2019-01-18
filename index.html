@@ -21,11 +21,47 @@
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <meta name="referrer" content="origin">
+    
   </head>
+    <style>
+    html{
+  background-color: black;
+  font-family:'Open Sans'
+}
+
+  .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+
+    </style>
   <body style="">
     <div class="wrapper">
       <header style="text-align:center;">
-          <h1><strong>Nathan Cain</strong><BR>Consulting</h1>        
+          <h1>Nathan Cain<BR><small>Consulting</small></h1>        
         
           <img src="https://res.cloudinary.com/slowmersion/image/upload/c_fill,ar_1:1,g_auto,r_max,bo_100px_solid_black,b_rgb:FFFFFF/v1513260254/nathan-cain.jpg" alt="Nathan Cain's Face ;-)">
         
@@ -39,19 +75,38 @@
         
 
         
-       <!-- <ul class="downloads">
-          <li><a href="https://github.com/pages-themes/minimal/zipball/master">Download <strong>Contact Card</strong></a></li>
-          <li><a href="https://github.com/pages-themes/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/pages-themes/minimal">View On <strong>GitHub</strong></a></li>
-            <li><a href="https://github.com/pages-themes/minimal">View On <strong>GitHub</strong></a></li>
-            <li><a href="https://github.com/pages-themes/minimal">View On <strong>GitHub</strong></a></li>
-            <li><a href="https://github.com/pages-themes/minimal">View On <strong>GitHub</strong></a></li>
+       <ul class="downloads">
+          <li><a href="#contact">Contact Me</a></li>
+          
         </ul>
-        -->
+       
       </header>
       <section>
 
-      <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+          <h1>Computer and network troubleshooting</h1>
+          <p>Contact me if you need help with your computer(s) or your network. (501) 463-6336</p>
+          <h1>Web development</h1>
+          <p>Check out some of my personal projects:</p>
+          <ul>
+              <li><a href="https://pinwean.com">Pinwean.com</a> - Teach yourself to read Chinese</li>
+              <li><a href="https://play.google.com/store/apps/details?id=appinventor.ai_ndcain.audio_lessons">Audio Lessons Generator</a> - android app</li>
+          </ul>
+          <h1>E-waste management</h1>
+          <p>I can collect your company's electronic equipment that is near or at the end of its useful life. Depending on the level of certification and/or data wiping you require this can many times be done at no fee. Your e-waste will be handled in an environmentally responsible way and in accordance with all local laws.</p>
+       
+          <h1 id="contact">Contact Me</h1>
+       <div class="row" style="margin:50px">
+  <div class="col s12 m8 l6 offset-m2 offset-l3 white" style="padding:30px;border-radius:5px">
+    <h4 class="blue-text text-darken-2" style="margin-top:0px;font-weight:300">Contact Us</h4>
+    <form action="https://formspree.io/ndcain@gmail.com" method="POST">
+      <input placeholder="Name" class="input-field" type="text" name="name"/>
+      <input placeholder="email" class="input-field" type="email" name="_replyto">
+        <textarea id="textarea1" class="materialize-textarea" placeholder="Enter your message here..." name="message" data-length="500"></textarea>
+      <input class="waves-effect waves-light btn blue darken-2 right" type="submit" value="Send">
+    </form>
+  </div>
+</div>
+     <!-- <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
 
 <p><a href="./another-page.html">Link to another page</a>.</p>
 
@@ -217,6 +272,7 @@
 
 
       </section>
+-->
       <footer>
         
         <!--<p>This project is maintained by <a href="https://github.com/pages-themes">pages-themes</a></p>-->
@@ -224,6 +280,7 @@
         <!-- <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> -->
       </footer>
     </div>
+      
     <script src="/minimal/assets/js/scale.fix.js"></script>
     
   
