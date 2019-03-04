@@ -1,15 +1,26 @@
 <style type="text/css">
-body {
-   margin: 0;
-   overflow: hidden;
+
+   .iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
 }
-#iframe1 {
-    position:absolute;
-    left: 0px;
-    width: 100%;
-    top: 0px;
-    height: 100%;
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+ 
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
 }
 </style>
 
-<iframe id="iframe1" src="https://goo.gl/forms/0WLw4NyIlTWwnPcr2"><a href="https://goo.gl/forms/0WLw4NyIlTWwnPcr2">Request to a City Witnessing Spot</a></iframe>
+<div class="iframe-container">
+<iframe id="iframe1" src="https://goo.gl/forms/0WLw4NyIlTWwnPcr2" allowfullscreen><a href="https://goo.gl/forms/0WLw4NyIlTWwnPcr2">Request to a City Witnessing Spot</a></iframe>
+</div>
